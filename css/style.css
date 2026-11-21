@@ -1,0 +1,10 @@
+body { font-family: Arial, sans-serif; max-width: 720px;
+       margin: 2rem auto; padding: 0 1rem; }
+nav a { margin-right: 1rem; }
+.special { font-weight: bold; color: #a3173a; }
+.highlight { background: #fbf4e6; }
+.active { font-weight: bold; text-decoration: underline; }
+.done { text-decoration: line-through; color: #888; }
+.dark { background: #1c2759; color: #f6f4ef; }
+.dark a { color: #e2a93b; }
+.error { color: #a3173a; }

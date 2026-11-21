@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Tracker</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 600px;
+               margin: 2rem auto; padding: 0 1rem; }
+        form { display: flex; gap: 8px; }
+        input, button { padding: 8px; font-size: 1rem; }
+        #task-input { flex: 1; }
+        ul { list-style: none; padding: 0; }
+        li { display: flex; justify-content: space-between;
+             padding: 8px; border-bottom: 1px solid #ddd; cursor: pointer; }
+        li.done span { text-decoration: line-through; color: #888; }
+        .delete-btn { border: none; background: none; color: #a3173a;
+                      font-size: 1.2rem; cursor: pointer; }
+        .error { color: #a3173a; }
+    </style>
+    <script src="js/tracker.js" defer></script>
+</head>
+<body>
+    <h1>Task Tracker</h1>
+    <form id="task-form">
+        <input id="task-input" type="text" placeholder="What do you need to do?">
+        <button type="submit">Add</button>
+    </form>
+    <p id="message"></p>
+    <ul id="task-list"></ul>
+    <p id="summary"></p>
+</body>
+</html>
